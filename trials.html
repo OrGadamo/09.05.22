@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="guessgame()">try the game</button>
+    <script>
+      function guessgame() {
+        var correctnum = Math.floor(Math.random() * 100);
+        var timer = Date.now();
+        var tries = 5;
+        var userguess;
+        do {
+          userguess = +prompt(
+            `guess the number, you have ${tries} guesses left`
+          );
+          if (userguess > correctnum) {
+            alert("your guess is above the correct number");
+          } else if (userguess < correctnum) {
+            alert("your guess is under the correct number");
+          } else {
+            alert("correct your guess is right");
+          }
+          tries--;
+        } while (tries > 0 && userguess != correctnum);
+        if (userguess == correctnum) {
+          document.write("you won!!!!", "<br>");
+        } else {
+          document.write("you lost:(", "<br>");
+        }
+        var duration = (Date.now() - timer) / 1000;
+        document.write(
+          "you ussed ",
+          5 - tries,
+          " guesses and your time is  ",
+          duration,
+          "sec",
+          "<br>"
+        );
+      }
+    </script>
+  </body>
+</html>

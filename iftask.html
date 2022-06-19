@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="hellocall()">press to greet</button>
+    <button onclick="hellocall()">press to greet</button>
+    <button onclick="hellocall()">press to greet</button>
+    <script>
+      // //if input num > 10 print greater then...
+      // var num = +prompt("enter a number:");
+      // if (num > 10) {
+      //   document.write(num, " greater then 10");
+      // }
+      // //if input num > 10 print grater then.. if num < 10 print less then...
+      // var num = +prompt("enter a number:");
+      // if (num > 10) {
+      //   console.log(num, " is greater then 10");
+      // } else if (num < 10) {
+      //   console.log(num, " is less then 10");
+      // }
+      // //if input num > 10 print grater then.. if num < 10 print less then... else print equal to ...
+      // var num = +prompt("enter a number:");
+      // if (num > 10) {
+      //   console.log(num, " is greater then 10");
+      // } else if (num < 10) {
+      //   console.log(num, " is less then 10");
+      // } else {
+      //   console.log(num, " is equal to 10");
+      // }
+      // //input 2 numbers and compare them
+      // var first = +prompt("enter a number to compare:");
+      // var second = +prompt("enter a number to compare:");
+      // if (first > second) {
+      //   console.log("the number: ", first, " is bigger then: ", second);
+      // } else if (second > first) {
+      //   console.log("the number: ", second, " is bigger then: ", first);
+      // } else {
+      //   console.log("the numbers: ", first, "and ", second, " are equal");
+      // }
+      // //print number 1-100
+      // var i = 1;
+      // while (i <= 100) {
+      //   document.write(i);
+      //   i++;
+      // }
+      //input 5 num cal avg,sum and print them
+      // var sum = 0;
+      // var i = 0;
+      // while (i < 5) {
+      //   sum = sum + +prompt("enter a number to cal avg and sum:");
+      //   i++;
+      // }
+      // var avg = sum / 5;
+      // console.log(
+      //   "the sum of these numbers is: ",
+      //   sum,
+      //   " and the avrage is: ",
+      //   avg
+      // );
+      //print all even numbers from 2-50 using while loop
+      // var i = 2;
+      // while (i <= 50) {
+      //   if (i % 2 == 0) {
+      //     console.log(i);
+      //   }
+      //   i++;
+      // }
+      //print numbers from 1-50 in fump of +3
+      // var i = 1;
+      // while (i <= 50) {
+      //   console.log(i);
+      //   i = i + 3;
+      // }
+      // //another solve
+      // var i = 0;
+      // while (i <= 50) {
+      //   if (i % 3 == 1) {
+      //     console.log(i);
+      //   }
+      //   i++;
+      // }
+      //input number and assembly
+      // var num = +prompt("enter a number:");
+      // var mul = 1;
+      // while (num > 0) {
+      //   mul = mul * num;
+      //   num--;
+      // }
+      // console.log(mul);
+      //input 5 number and print the max number and min number
+      // var max = +prompt("enter a number:");
+      // var min = max;
+      // var i = 0;
+      // while (i < 4) {
+      //   var check = +prompt("enter a number:");
+      //   if (check > max) {
+      //     max = check;
+      //   } else if (check < min) {
+      //     min = check;
+      //   }
+      //   i++;
+      // }
+      // console.log("the max number is: ", max, " the min number is: ", min);
+      // repeat 1-4 using for loop
+      // for (var i = 1; i <= 100; i++) {
+      //   console.log(i);
+      // }
+      // var sum = 0;
+      // for (var i = 0; i < 5; i++) {
+      //   sum = sum + +prompt("enter number to cal avg and sum:");
+      // }
+      // var avg = sum / 5;
+      // console.log(
+      //   "the sum of all the numbers is: ",
+      //   sum,
+      //   "and the avrage is: ",
+      //   avg
+      // );
+      // for (var i = 2; i <= 50; i++) {
+      //   if (i % 2 == 0) {
+      //     console.log(i);
+      //   }
+      // }
+      // assemblysum = 1;
+      // for (var i = +prompt("enter a number for assembly"); i > 0; i--) {
+      //   assemblysum = assemblysum * i;
+      // }
+      // console.log(assemblysum);
+      //repeat 1-6 using do...while loop
+      // var i = 1;
+      // do {
+      //   console.log(i);
+      //   i++;
+      // } while (i <= 100);
+      // var i = 2;
+      // do {
+      //   if (i % 2 == 0) {
+      //     console.log(i);
+      //   }
+      //   i++;
+      // } while (i <= 50);
+      // var i = 0;
+      // do {
+      //   if (i % 3 == 1) {
+      //     console.log(i);
+      //   }
+      //   i++;
+      // } while (i <= 50);
+      // var assembly = 1;
+      // var i = +prompt("enter a number to cal assembly:");
+      // do {
+      //   assembly = assembly * i;
+      //   i--;
+      // } while (i > 0);
+      // console.log("the assembly is:", assembly);
+      // var max = +prompt("enter a number to check min max:");
+      // var min = max;
+      // var i = 0;
+      // do {
+      //   var checkminmax = +prompt("enter a number to check min max:");
+      //   if (checkminmax > max) {
+      //     max = checkminmax;
+      //   } else if (checkminmax < min) {
+      //     min = checkminmax;
+      //   }
+      //   i++;
+      // } while (i < 4);
+      // console.log(
+      //   "the biggest number is: ",
+      //   max,
+      //   "and the smallest number is:",
+      //   min
+      // );
+      //input n numbers and print max and min, to the iput 0 or negative number
+      // var max = +prompt(
+      //   "enter a number to check min/max, enter 0 or negative number to stop:"
+      // );
+      // if (max > 0) {
+      //   var min = max;
+      //   for (
+      //     var i = +prompt(
+      //       "enter a number to check min/max, enter 0 or negative number to stop:"
+      //     );
+      //     i > 0;
+      //     i = +prompt(
+      //       "enter a number to check min/max, enter 0 or negative number to stop:"
+      //     )
+      //   ) {
+      //     if (i > max) {
+      //       max = i;
+      //     } else if (i < min) {
+      //       min = i;
+      //     }
+      //   }
+      //   console.log(
+      //     "the biggest number is: ",
+      //     max,
+      //     "the smallest number is: ",
+      //     min
+      //   );
+      // } else {
+      //   console.log("no number has been inputed");
+      // }
+      //input a number and print the digits, from low to high
+      // var divideme = +prompt("enter a number to take apart:");
+      // do {
+      //   var digit = divideme % 10;
+      //   console.log(digit);
+      //   divideme = (divideme - digit) / 10;
+      // } while (divideme / 10 > 0);
+      //input a number and print the digits, from high to low
+      // var divideme = +prompt("enter a number to take apart:");
+      // var placementnum = divideme;
+      // var digitsnumber = 0;
+      // do {
+      //   digitsnumber++;
+      //   placementnum = (placementnum - (placementnum % 10)) / 10;
+      // } while (placementnum != 0);
+      // do {
+      //   var divider = 1;
+      //   for (var i = digitsnumber; i > 1; i--) {
+      //     divider = divider * 10;
+      //   }
+      //   var digit = (divideme - (divideme % divider)) / divider;
+      //   console.log(digit);
+      //   divideme = divideme % divider;
+      //   digitsnumber--;
+      // } while (digitsnumber > 0);
+      //guess game bugging-ask jacob
+      // let input = document.createElement("input");
+      // document.getElementsByTagName("body");
+      // var correctnum = Math.floor(Math.random() * 100);
+      // var timer = Date.now();
+      // var tries = 10;
+      // var userguess;
+      // do {
+      //   userguess = +prompt(
+      //     "guess the number, you have " + tries + " guesses left"
+      //   );
+      //   if (userguess > correctnum) {
+      //     document.write("your guess is above the correct number");
+      //   } else if (userguess < correctnum) {
+      //     document.write("your guess is under the correct number");
+      //   } else {
+      //     document.write("correct you guess is right");
+      //   }
+      //   tries--;
+      // } while (tries > 0 && userguess != correctnum);
+      // if (userguess == correctnum) {
+      //   console.log("you won!!!!");
+      // } else {
+      //   console.log("you lost:(");
+      // }
+      // var duration = Date.now() - timer;
+      // console.log(
+      //   "you ussed ",
+      //   10 - tries,
+      //   " guesses and your time is  ",
+      //   duration
+      // );
+      //rectangle from * solve1
+      // var width = +prompt("enter rectangle width");
+      // var height = +prompt("enter rectangle height");
+      // for (var i = height; i > 0; i--) {
+      //   var edge = width;
+      //   if (i == height || i == 1) {
+      //     while (edge > 0) {
+      //       document.write("*");
+      //       edge--;
+      //     }
+      //   } else {
+      //     document.write("*");
+      //     while (edge - 2 > 0) {
+      //       document.write("&nbsp;");
+      //       document.write("&nbsp;");
+      //       edge--;
+      //     }
+      //     document.write("*");
+      //   }
+      //   document.write("<br>");
+      // }
+      //rectangle from * solve2
+      // var width = +prompt("enter rectangle width");
+      // var height = +prompt("enter rectangle height");
+      // for (var i = height; i > 0; i--) {
+      //   var edge = width;
+      //   while (edge > 0) {
+      //     document.write("*");
+      //     edge--;
+      //   }
+      //   document.write("<br>");
+      // }
+      //triangle from * input for length
+      // var stars = +prompt("enter a number for stars");
+      // var starsnum = 0;
+      // for (var i = stars; i > 0; i--) {
+      //   starsnum++;
+      //   for (var j = starsnum; j > 0; j--) {
+      //     document.write("*");
+      //     document.write("&nbsp;&nbsp;");
+      //   }
+      //   document.write("<br>");
+      // }
+      //multiplication table
+      // for (var i = 1; i < 11; i++) {
+      //   for (var j = 1; j < 11; j++) {
+      //     document.write(i * j);
+      //     document.write("&nbsp;");
+      //   }
+      //   document.write("<br>");
+      // }
+      function hellocall() {
+        document.body.textContent = "hello";
+      }
+    </script>
+  </body>
+</html>

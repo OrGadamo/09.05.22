@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World!!!</h1>
+
+    <script>
+      // print my name 10 times
+      var count = 0;
+      while (count < 10) {
+        console.log("Or Gadamo");
+        count++;
+      }
+      console.log("hello");
+      // print to console all the numbers 0 to 100
+      var numbercount = 0;
+      while (numbercount <= 100) {
+        console.log(numbercount++);
+      }
+      //print odd numbers from o to 567 using while loop
+      var countit = 0;
+      while (countit <= 567) {
+        if (countit % 2 == 1) {
+          console.log(countit);
+        }
+        countit++;
+      }
+      //print even numbers from 0 to 567 using for loop
+      for (var i = 0; i <= 567; i++) {
+        if (i % 2 == 0) {
+          console.log(i);
+        }
+      }
+      // continue yesterday tasks
+      // אופרטורים לוגיים שאלה ב
+      //a. true b.false c.true d.true
+      //multiply 3 number and print to console-log
+      var mul = 1;
+      for (var i = 0; i < 3; i++) {
+        mul = mul * +prompt("enter a number:");
+      }
+      console.log(mul);
+      //input numbers from user and check module
+      var first = +prompt("enter a number for module check:");
+      var second = +prompt("enter a number for module check:");
+      var result = second % first;
+      console.log(result);
+      //input number and print number++
+      var plusnum = +prompt("enter a number to plus it:");
+      console.log(++plusnum);
+      // input number and print num*3
+      var mulnum = +prompt("enter a number for multiply by 3:");
+      console.log(mulnum * 3);
+      //input radius and print circle perimeter and area
+      var radius = +prompt("enter circle radius:");
+      console.log(
+        "circle perimeter: ",
+        radius * 2 * 3.14,
+        "and area: ",
+        radius * radius * 3.14
+      );
+      //input 3 players name and ages, print the names and the avrage age
+      var agesum = 0;
+      for (var i = 0; i < 3; i++) {
+        console.log(prompt("enter a player name:"));
+        agesum = agesum + +prompt("enter the player age:");
+      }
+      console.log("their age avrage is: ", agesum / 3);
+      //task number 4 without variable
+      console.log(+prompt("enter a number to multiply by 3:") * 3);
+      //precedence a
+      //   var b = 4;
+      //   b = b +1;
+      //   var d = 4 + b;
+      //   console.log(b,d);
+      //b task
+      //   var b = 4;
+      //   b = b - 1;
+      //   var d = 4 + b;
+      //   console.log(b, d);
+    </script>
+  </body>
+</html>
